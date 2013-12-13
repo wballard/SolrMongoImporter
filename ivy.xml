@@ -8,11 +8,11 @@
         <conf name="default" transitive="true" visibility="public" extends="master" />
     </configurations>
     <dependencies>
-        <dependency org="org.mongodb" name="mongo-java-driver" rev="2.8.0"
+        <dependency org="org.mongodb" name="mongo-java-driver" rev="2.11.3"
                     conf="compile->compile(*),master(*);runtime->runtime(*);master->master(*)"/>
-        <dependency org="org.apache.solr" name="solr-dataimporthandler" rev="3.6.0"
+        <dependency org="org.apache.solr" name="solr-dataimporthandler" rev="4.6.0"
                     conf="compile->compile(*),master(*);runtime->runtime(*);master->master(*)"/>
-        <dependency org="junit" name="junit" rev="4.3"
+        <dependency org="junit" name="junit" rev="4.11"
                     conf="compile->compile(*),master(*);runtime->runtime(*);master->master(*)"/>
     </dependencies>
 </ivy-module>
