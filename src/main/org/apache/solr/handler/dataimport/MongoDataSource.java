@@ -127,6 +127,9 @@ public class MongoDataSource extends DataSource<Iterator<Map<String, Object>>>{
             while ( iterator.hasNext() ) {
                 String key = iterator.next();
                 Object innerObject = mongoObject.get(key);
+                if (innerObject instanceof BasicDBObject) {
+                  innerObject = ((BasicDBObject)innerObject).toString();
+                }
 
                 result.put( key, innerObject );
             }
